@@ -1,0 +1,117 @@
+body {
+    font-family: 'Righteous';
+    background: #E5E5E5;
+}
+
+/* Começo do meu topbar */
+
+.topbar {
+    height: 92px;
+    background-color: #CF2B2B;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.topbar .brand {
+    margin-left: 21px;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar .brand a:nth-child(1) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 55px;
+    letter-spacing: -0.012em;
+    color: #FFFFFF;
+}
+
+.topbar .brand a:nth-child(2) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+/* Corpo do meu projeto */
+
+.corpo {
+    margin-top: 92px;
+    height: 2000px;
+    width: 100%;
+}
+
+/* PARTE INFERIOR */
+
+.bottombar {
+    height: 92px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottombar .finalize {
+    width: 364px;
+    height: 61px;
+    background: #CBCBCB;
+    border-radius: 50px;
+    display: flex;
+}
+
+.bottombar .finalize a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    margin: auto 70px;
+}
+
+.bottombar .closeorder {
+    width: 364px;
+    height: 61px;
+    background: #32B72F;
+    border-radius: 50px;
+    display: none;
+}
+
+.bottombar .closeorder a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    margin: auto auto;
+}
+
+/* CONFIRME O SEU PEDIDO */
+
+.confirmorder {
+    position: fixed;
+    width: 377px;
+    height: 353px;
+    left: calc(50% - 377px/2 - 0.5px);
+    top: calc(50% - 353px/2 - 0.5px);
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: none;
+}
