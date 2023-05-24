@@ -13,6 +13,7 @@ body {
     top: 0px;
     left: 0px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
 }
 
 .topbar .brand {
@@ -41,10 +42,109 @@ body {
 
 /* Corpo do meu projeto */
 
-.corpo {
-    margin-top: 92px;
-    height: 2000px;
+.general{
+    display: flex;
+}
+
+.fotolayout{
+    background-color: #32B72F;
     width: 100%;
+    display: block;
+    padding-top: 92px;
+}
+
+.fotolayout .fotopc{
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .fotolayout{
+        display: none;
+    }
+    .general{
+        display: block;
+    }
+}
+
+.general .corpo {
+    padding-top: 92px;
+    padding-bottom: 100px;
+    height: 100%;
+}
+
+.corpo .aba {
+    margin-top: 18px;
+    width: 100%;
+    overflow-x: auto;
+    /*Tamanho de 590px*/
+}
+
+.corpo .aba .nome {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.018em;
+    color: #333333;
+    margin-left: 19px;
+    margin-bottom: 12px;
+}
+
+/*Opcoes de pedido*/
+
+.corpo .aba .containeropcao {
+    display: flex;
+    width: 590px;
+}
+
+.corpo .aba .containeropcao .opcao {
+    width: 172px;
+    height: 216px;
+    border-radius: 9px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    margin-left: 19px;
+    display: flex;
+    flex-direction: column;
+}
+
+.corpo .aba .containeropcao .opcao .foto {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin: 10px auto;
+}
+
+.corpo .aba .containeropcao .opcao p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    margin: 6px 15px;
+}
+
+.corpo .aba .containeropcao .opcao a {
+    margin-left: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+    margin-bottom: 8px;
+}
+
+.corpo .aba .containeropcao .opcao h1 {
+    margin-left: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
 }
 
 /* PARTE INFERIOR */
@@ -59,6 +159,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .bottombar .finalize {
@@ -104,14 +205,23 @@ body {
 
 /* CONFIRME O SEU PEDIDO */
 
-.confirmorder {
+.translucent {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 100%;
+    width: 100%;
     position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmorder {
     width: 377px;
     height: 353px;
-    left: calc(50% - 377px/2 - 0.5px);
-    top: calc(50% - 353px/2 - 0.5px);
     background: #50D074;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
-    display: none;
 }
