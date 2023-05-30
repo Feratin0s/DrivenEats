@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <!-- Titutlo -->
     <title>DrivenEats</title>
+    <link rel="icon" type="image/png" href="./Photos/burger_fast_food_icon_181517.png">
 </head>
 
 <body>
@@ -32,54 +33,63 @@
             <!-- Primeira ABA - Escolha seu prato -->
             <div class="aba">
                 <div class="nome">Primeiro, seu prato</div>
-                <div class="containeropcao">
-                    <div class="opcao"><img src="./Photos/frango_yin_yang.png" class="foto" alt="">
-                        <p>Frango Yin Yang</p><a>Um pouco de batata, um pouco de salada</a>
-                        <h1>R$14,90</h1>
+                <div class="containeropcao" data-test="dish">
+                    <div class="opcao" onclick="mudarBorda(this),Prato(this)"><img src="./Photos/frango_yin_yang.png" class="foto" alt="">
+                        <p data-test="item-name">Frango Yin Yang</p><a>Um pouco de batata, um pouco de salada</a>
+                        <h1 data-test="item-price">R$14,90</h1>
+                        <ion-icon class="selecionada" name="checkmark-outline"></ion-icon>
                     </div>
-                    <div class="opcao"><img src="./Photos/frango_yin_yang.png" class="foto" alt="">
-                        <p>Frango Yin Yang</p><a>Um pouco de batata, um pouco de salada</a>
-                        <h1>R$14,90</h1>
+                    <div class="opcao" onclick="mudarBorda(this),Prato(this)"><img src="./Photos/pexels-shourav-sheikh.jpg" class="foto" alt="">
+                        <p data-test="item-name">Macarrão</p><a>Azeitona, cogumelos e bastante salada</a>
+                        <h1 data-test="item-price">R$18,90</h1>
+                        <ion-icon class="selecionada" name="checkmark-outline"></ion-icon>
                     </div>
-                    <div class="opcao"><img src="./Photos/frango_yin_yang.png" class="foto" alt="">
-                        <p>Frango Yin Yang</p><a>Um pouco de batata, um pouco de salada</a>
-                        <h1>R$14,90</h1>
+                    <div class="opcao" onclick="mudarBorda(this),Prato(this)"><img src="./Photos/brasileiro.jpeg" class="foto" alt="">
+                        <p data-test="item-name">Brasileirinho</p><a>Prato típico do brasil, arroz e feijão</a>
+                        <h1 data-test="item-price">R$13,00</h1>
+                        <ion-icon class="selecionada" name="checkmark-outline"></ion-icon>
                     </div>
                 </div>
             </div>
             <!-- Segunda ABA - Escolha sua bebida -->
             <div class="aba">
                 <div class="nome">Agora, sua bebida</div>
-                <div class="containeropcao">
-                    <div class="opcao"><img src="./Photos/coca-cola.png" class="foto" alt="">
-                        <p>Frango Yin Yang</p><a>Um pouco de batata, um pouco de salada</a>
-                        <h1>R$14,90</h1>
+                <div class="containeropcao" data-test="drink">
+                    <div class="opcao" onclick="mudarBorda(this),bebidas(this)"><img src="./Photos/coca-cola.png" class="foto" alt="">
+                        <p data-test="item-name">Coca cola</p><a>Lata 350ml</a></br>
+                        <h1 data-test="item-price">R$4,90</h1>
+                        <ion-icon class="selecionada" name="checkmark-outline"></ion-icon>
                     </div>
-                    <div class="opcao"><img src="./Photos/coca-cola.png" class="foto" alt="">
-                        <p>Frango Yin Yang</p><a>Um pouco de batata, um pouco de salada</a>
-                        <h1>R$14,90</h1>
+                    <div class="opcao" onclick="mudarBorda(this),bebidas(this)"><img src="./Photos/Sucolaranja.webp" class="foto" alt="">
+                        <p data-test="item-name">Suco Laranja</p><a>Copo grande 500ml</a></br>
+                        <h1 data-test="item-price">R$6,00</h1>
+                        <ion-icon class="selecionada" name="checkmark-outline"></ion-icon>
                     </div>
-                    <div class="opcao"><img src="./Photos/coca-cola.png" class="foto" alt="">
-                        <p>Frango Yin Yang</p><a>Um pouco de batata, um pouco de salada</a>
-                        <h1>R$14,90</h1>
+                    <div class="opcao" onclick="mudarBorda(this),bebidas(this)"><img src="./Photos/caipiroska-de-limao-01.jpg" class="foto" alt="">
+                        <p data-test="item-name">Caipiroska</p><a>Feita de limão, sem alcool</a>
+                        <h1 data-test="item-price">R$14,90</h1>
+                        <ion-icon class="selecionada" name="checkmark-outline"></ion-icon>
                     </div>
                 </div>
             </div>
             <!-- Terceira ABA - Escolha sua sobremesa -->
             <div class="aba">
                 <div class="nome">Por fim, sua sobremesa</div>
-                <div class="containeropcao">
-                    <div class="opcao"><img src="./Photos/pudim.png" class="foto" alt="">
-                        <p>Frango Yin Yang</p><a>Um pouco de batata, um pouco de salada</a>
-                        <h1>R$14,90</h1>
+                <div class="containeropcao" data-test="dessert">
+                    <div class="opcao" onclick="mudarBorda(this),doce(this)"><img src="./Photos/pudim.png" class="foto" alt="">
+                        <p data-test="item-name">Pudim</p><a>Apenas um pudim</a></br>
+                        <h1 data-test="item-price">R$7,90</h1>
+                        <ion-icon class="selecionada" name="checkmark-outline"></ion-icon>
                     </div>
-                    <div class="opcao"><img src="./Photos/pudim.png" class="foto" alt="">
-                        <p>Frango Yin Yang</p><a>Um pouco de batata, um pouco de salada</a>
-                        <h1>R$14,90</h1>
+                    <div class="opcao" onclick="mudarBorda(this),doce(this)"><img src="./Photos/petit-gateau.jpeg" class="foto" alt="">
+                        <p data-test="item-name">Petit Gateau</p><a>Bolinho com sorvete de creme</a>
+                        <h1 data-test="item-price">R$10,90</h1>
+                        <ion-icon class="selecionada" name="checkmark-outline"></ion-icon>
                     </div>
-                    <div class="opcao"><img src="./Photos/pudim.png" class="foto" alt="">
-                        <p>Frango Yin Yang</p><a>Um pouco de batata, um pouco de salada</a>
-                        <h1>R$14,90</h1>
+                    <div class="opcao" onclick="mudarBorda(this),doce(this)"><img src="./Photos/romeujulieta.jpeg" class="foto" alt="">
+                        <p data-test="item-name">Romeu e Julieta</p><a>Torta de goiaba com quejo</a>
+                        <h1 data-test="item-price">R$9,90</h1>
+                        <ion-icon class="selecionada" name="checkmark-outline"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -91,15 +101,18 @@
     </div>
     <!-- BARRA DO BOTTOM -->
     <div class="bottombar">
-        <div class="finalize"><a>Selecione os 3 itens para fechar o pedido</a></div>
-        <div class="closeorder"><a>Fechar pedido</a></div>
+        <div class="finalize" data-test="order-btn"><a>Selecione os 3 itens para fechar o pedido</a></div>
+        <div class="closeorder" data-test="order-btn" onclick="Calcular()"><a>Fechar pedido</a></div>
     </div>
     <!-- CONFIRME O SEU PEDIDO  -->
     <div class="translucent">
-        <div class="confirmorder"></div>
+        <div class="confirmorder" data-test="confirm-order-modal"><p>Confirme seu pedido <div class="divscript"></div><div class="Pedir" onclick="End()" data-test="confirm-order-btn">Tudo certo, pode pedir!</div><h1 data-test="cancel-order-btn" onclick="Cancel()">Cancelar</h1>
     </div>
+    <!-- Colocar <ion-icon name="checkmark-outline"></ion-icon> no código depois -->
     <!-- SCRIPTS -->
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
